@@ -1,47 +1,27 @@
-
-// Testing.cpp : Defines the class behaviors for the application.
-//
-
 #include "stdafx.h"
 #include "Testing.h"
 #include "TestingDlg.h"
-
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
-
-// TestingApp
+TestingApp theApp;
 
 BEGIN_MESSAGE_MAP(TestingApp, CWinApp)
 	ON_COMMAND(ID_HELP, &CWinApp::OnHelp)
 END_MESSAGE_MAP()
 
-
-// TestingApp construction
-
 TestingApp::TestingApp()
 {
-	// TODO: add construction code here,
-	// Place all significant initialization in InitInstance
 }
-
-
-// The one and only TestingApp object
-
-TestingApp theApp;
-
-
-// TestingApp initialization
 
 BOOL TestingApp::InitInstance()
 {
 	CWinApp::InitInstance();
 
-
 	// Create the shell manager, in case the dialog contains
 	// any shell tree view or shell list view controls.
-	CShellManager *pShellManager = new CShellManager;
+	CShellManager sm;
 
 	// Activate "Windows Native" visual manager for enabling themes in MFC controls
 	CMFCVisualManager::SetDefaultManager(RUNTIME_CLASS(CMFCVisualManagerWindows));
@@ -55,37 +35,26 @@ BOOL TestingApp::InitInstance()
 	// such as the name of your company or organization
 	SetRegistryKey(_T("Local AppWizard-Generated Applications"));
 
-	TestingDlg dlg;
-	m_pMainWnd = &dlg;
-	INT_PTR nResponse = dlg.DoModal();
-	if (nResponse == IDOK)
+	TestingDlg dlg; m_pMainWnd = &dlg;
+
+	switch (dlg.DoModal())
 	{
-		// TODO: Place code here to handle when the dialog is
-		//  dismissed with OK
-	}
-	else if (nResponse == IDCANCEL)
-	{
-		// TODO: Place code here to handle when the dialog is
-		//  dismissed with Cancel
-	}
-	else if (nResponse == -1)
-	{
-		TRACE(traceAppMsg, 0, "Warning: dialog creation failed, so application is terminating unexpectedly.\n");
-		TRACE(traceAppMsg, 0, "Warning: if you are using MFC controls on the dialog, you cannot #define _AFX_NO_MFC_CONTROLS_IN_DIALOGS.\n");
+		case IDOK:
+		{
+			break;
+		}
+		case IDCANCEL:
+		{
+			break;
+		}
+		case -1:
+		{
+			TRACE(traceAppMsg, 0, "Warning: dialog creation failed, so application is terminating unexpectedly.\n");
+			TRACE(traceAppMsg, 0, "Warning: if you are using MFC controls on the dialog, you cannot #define _AFX_NO_MFC_CONTROLS_IN_DIALOGS.\n");
+			break;
+		}
 	}
 
-	// Delete the shell manager created above.
-	if (pShellManager != NULL)
-	{
-		delete pShellManager;
-	}
-
-#ifndef _AFXDLL
-	ControlBarCleanUp();
-#endif
-
-	// Since the dialog has been closed, return FALSE so that we exit the
-	//  application, rather than start the application's message pump.
 	return FALSE;
 }
 
