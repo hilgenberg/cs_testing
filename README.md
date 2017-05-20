@@ -1,5 +1,7 @@
 # cs_testing
 
+WinMerge2
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Donec hendrerit eget orci at commodo.
 Curabitur commodo porttitor nisl a sollicitudin. 
