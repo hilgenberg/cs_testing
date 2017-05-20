@@ -6,6 +6,8 @@ H: Change something else
 Change on master
 Other change on master
 
+H: Second change
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Donec hendrerit eget orci at commodo.
 Curabitur commodo porttitor nisl a sollicitudin. 
