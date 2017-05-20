@@ -7,6 +7,7 @@ Change on master
 Other change on master
 
 H: Second change
+C: second change
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Donec hendrerit eget orci at commodo.
