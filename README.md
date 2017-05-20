@@ -1,6 +1,6 @@
 # cs_testing
 
-WinMerge2
+WinMerge3
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Donec hendrerit eget orci at commodo.
