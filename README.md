@@ -4,6 +4,7 @@ C: change something
 H: Change something else
 
 Change on master
+Other change on master
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Donec hendrerit eget orci at commodo.
