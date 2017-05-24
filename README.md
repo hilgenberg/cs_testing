@@ -2,6 +2,12 @@
 
 Dirk Ortloff: testing GIT
 
+Kanglin: whatever
+
+Torsten: whatever
+
+Daniela iii
+
 Roxana - test
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Donec hendrerit eget orci at commodo.
