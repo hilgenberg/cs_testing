@@ -4,6 +4,8 @@ Dirk Ortloff: testing GIT
 
 Kanglin: whatever
 
+Torsten: whatever
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Donec hendrerit eget orci at commodo.
 Curabitur commodo porttitor nisl a sollicitudin. 
